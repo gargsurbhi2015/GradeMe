@@ -1,0 +1,73 @@
+<?php
+
+	session_start();
+	// echo "Sau";
+	if(isset($_POST['userName']) && isset($_POST['password'])){
+		// $message = "set";
+		// echo "<script type='text/javascript'>alert('$message');</script>";
+
+		$userName = $_POST['userName'];
+		$password = $_POST['password'];
+	
+	
+		if($userName === "saumeel" && $password === "gajera"){
+			$_SESSION['firstName'] = "Saumeel";
+			$_SESSION['lastName'] = "Gajera";
+			$_SESSION['programmer'] = "Back-End Developer";
+			$_SESSION['university'] = "San Jose State University";
+			// header('Location: http://www.saumeel.com/final/mainpage_sau.html');
+			//header('Location: http://localhost/test/235/www/mainpage_sau.html');
+			// exit;
+		}else
+		if($userName === "surbhi" && $password === "garg"){
+			$_SESSION['firstName'] = "Surbhi";
+			$_SESSION['lastName'] = "Garg";
+			$_SESSION['programmer'] = "Front-End Developer";
+			$_SESSION['university'] = "San Jose State University";
+			// header('Location: http://www.saumeel.com/final/mainpage_sur.html');
+			//header('Location: http://localhost/test/235/www/mainpage_sur.html');
+			// exit;		
+		}else
+		if($userName === "darshpreet" && $password === "narula"){
+			$_SESSION['firstName'] = "Darshpreet";
+			$_SESSION['lastName'] = "Narula";
+			$_SESSION['programmer'] = "Back-End Developer";
+			$_SESSION['university'] = "San Jose State University";
+			// header('Location: http://localhost/test/235/www/mainpage_dar.html');
+			// header('Location: http://www.saumeel.com/final/mainpage_dar.html');
+			// exit;		
+		}else
+		if($userName === "karan" && $password === "khanna"){
+			$_SESSION['firstName'] = "Karan";
+			$_SESSION['lastName'] = "Khanna";			
+			$_SESSION['programmer'] = "Front-End Developer";
+			$_SESSION['university'] = "San Jose State University";
+			// header('Location: http://localhost/test/235/www/mainpage_kar.html');
+			// header('Location: http://www.saumeel.com/final/mainpage_kar.html');
+			// exit;
+		}else
+		if($userName === "vineesha" && $password === "kasireddy"){
+			$_SESSION['firstName'] = "Vineesha";
+			$_SESSION['lastName'] = "kasireddy";			
+			$_SESSION['programmer'] = "Front-End Developer";
+			$_SESSION['university'] = "San Jose State University";
+			// header('Location: http://localhost/test/235/www/mainpage_vin.html');
+			// header('Location: http://www.saumeel.com/final/mainpage_vin.html');
+			// exit;
+		}else{
+		$_SESSION['error'] = "Invalid credentials";
+			header('Location: test/235/index.php#login');
+
+		}
+		// echo $_SESSION['firstName'];
+		// exit;
+
+	header('Location: /test/235/www/mainpage.php#login');
+	}
+	else{
+		// $message = "enter the credentials!";
+		// echo "<script type='text/javascript'>alert('$message');</script>";
+				$_SESSION['error'] = "Please enter your credentials";
+				header('Location: test/235/index.php');
+	}
+?>

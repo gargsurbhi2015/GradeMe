@@ -1,0 +1,14 @@
+INSERT INTO `users`(`userName`, `firstName`, `lastName`, `programmer`, `university`, `password`, `student_id`, `ID`) 
+VALUES ('saumeel111','Saumeel','Gajera','Back-End Developer','San Jose State University','gajera',1000);
+
+
+
+INSERT INTO `users`(`userName`, `firstName`, `lastName`, `programmer`, `university`, `password`, `student_id`, `imageURL`) 
+VALUES ('surbhi111','Surbhi','Garg','Front-End Developer','San Jose State University','garg','010090210', 'www.gargsurbhi.com/sur.jpg');
+
+
+$hostname = "mysql-instance.caywog581zwf.us-west-2.rds.amazonaws.com";
+	$dbusername = "root";
+	$dbpassword = "root1234";
+	$dbname = "project235";
+	$port = "3306";

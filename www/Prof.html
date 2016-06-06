@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MST</title>
+    <meta charset="utf-8">
+
+    <!-- for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Latest compiled CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<script>
+    $(function () {
+        $('[data-toggle=popover]').popover({
+            trigger: 'hover',
+            html: true,
+            content: function () {
+                var rs = $('#rs');
+                var sg = $('#sg');
+                var tan = $('#tan');
+
+                if (rs.is(":hover")) {
+                    return '<img src="images/Team/ProfSinn.jpg" alt="ProfSinn" class="img-responsive center-block" /> <p><b>Professor Richard Sinn</b></p><p>CMPE Department<a href="https://linkedin.com/"><i class="fa fa-linkedin"></p>';
+                }
+                
+            },
+            title: ''
+        })
+    });
+</script>
+
+<body>
+
+<div class="container-fluid">
+    <div class="container">
+        <br><br>
+            <h1 style="text-align: center">Professor Richard Sinn</h1>
+            <br><br><br>
+                <table style="width:100%;">
+                    <tr>
+                        <td style="vertical-align: top;"><img class="img-circle" src="img/ProfSinn.jpg" alt="Generic placeholder image" width="200px" height="200px"></td>
+                        <td><p><b>Instructor:</b> Richard Sinn <br>
+                                <b>Email:</b> richardsinn@yahoo.com <br>
+                                <b>Office Hours:</b> After class, by appointment or email only<br><br>
+
+                                Professor Sinn is currently a Senior Software Development Manager at Adobe. He is responsible for a suite of mobile and desktop software. Before Adobe, he was a Principal MTS/Director at eBay looking over various security projects. Prior to that, he served as a Security Architect/Manager at various Yahoo business units (Real Time Communication group, Yahoo Community, Yahoo Communications) from 2005 to 2011. He has also held various senior positions at IBM, Oracle and different Silicon Valley startup companies. Professor Sinn is an inventor and has filed over eighteen invention disclosures (patents). He has published a college textbook (Software Security Technologies). He is also a frequent writer for various magazines and journals, and a frequent speaker at regional and national technology conferences. As a scholar and supporter for academia, he has been teaching in the Computer Engineering and Computer Science departments at San Jose State University since 1998. He also served as Adjunct Professor at the University of Minnesota.<br>
+                            </p>
+                        </td>
+                    </tr>                                                
+                </table>
+    </div>
+            
+</div>
+
+</body>
+</html>
